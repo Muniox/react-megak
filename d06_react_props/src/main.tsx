@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { App } from './App'
 import { Participants } from './Participants'
+import { participantsData } from '../data/aprtycipants'
 import './main.css'
 
 export interface Person {
@@ -16,17 +17,6 @@ const person: Person = {
   age: 123,
 };
 
-const list = [
-    {
-        name: "Bogdan",
-        email: "bogdan@wp.pl"
-    },
-    {
-        name: "Sławek",
-        email: "sławek@wp.pl"
-    }
-]
-
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 <>
   <App person = {person} />
@@ -36,6 +26,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       age: 123,
     }} 
   />
-    <Participants list={list} />
+    <Participants list={participantsData} />
 </>
 )

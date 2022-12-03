@@ -1,4 +1,5 @@
 import {StringList} from "./StringList";
+import {Records} from "./RecordsCount";
 
 interface Participant {
     name: string;
@@ -15,9 +16,7 @@ export const Participants = (props: ListProps) => {
     return (
         <>
             <StringList list={names} />
-            <p>
-                Razem: { props.list.length } rekordów.
-            </p>
+            <Records count={props.list.length} />
         </>
     )
 }
