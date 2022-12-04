@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {Participants} from "./Components/Participants";
-import {participantsData} from "../data/aprtycipants"
-
+import { App } from './App'
+import './index.css'
+import {Name} from "./Name";
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-   <Participants list={participantsData}/>
+    <App />
+      <Name />
   </React.StrictMode>
 )
