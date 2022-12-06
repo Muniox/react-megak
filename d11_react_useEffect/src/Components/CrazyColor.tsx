@@ -1,14 +1,12 @@
-interface Props {
-    background
-}
+import {useState, useEffect} from "react";
 
 export const CrazyColor = () => {
-    const [inputType, setInputType] = useState('password');
+    const [backgroundColor, setBackgroundColor] = useState('white');
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setInputType((inputType) => (
-                inputType === 'password' ? 'text' : 'password'
+            setBackgroundColor((backgroundColor) => (
+                backgroundColor === 'white' ? 'yellow' : 'white'
             ));
 
             /**
@@ -20,7 +18,7 @@ export const CrazyColor = () => {
              */
 
 
-        }, 1000)
+        }, 500)
 
         return () => {
             clearInterval(intervalId);

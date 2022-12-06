@@ -2,6 +2,7 @@ import './App.css'
 import { Clock } from './Components/Clock'
 import { CrazyInput } from './Components/CrazyInput'
 import { NumberList } from './Components/NumberList'
+import {CrazyColor} from "./Components/CrazyColor";
 
 export const App = () => {
 
@@ -14,6 +15,8 @@ export const App = () => {
       <div style={{
         backgroundColor: 'red'
         }}>Sialalala</div>
+        <CrazyColor />
     </div>
+
   )
 }
