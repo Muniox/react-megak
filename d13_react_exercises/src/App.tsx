@@ -10,13 +10,13 @@ import { ThreeColorsLed } from "./Components/ThreeColorsLed";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "test",
     element: (
       <Navbar />
     ),
   },
   {
-    path: "password",
+    path: "test/password",
     element:( 
       <>
         <Navbar />
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: "colors",
+    path: "test/colors",
     element:( 
       <>
         <Navbar />

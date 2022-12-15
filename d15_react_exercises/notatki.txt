@@ -1,0 +1,12 @@
+Klucze, czyli atrybut key,
+Jest bardzo ważny.
+Dzięki temu React wydajnie wie co zrobić, gdy lista się zmienia
+
+Jest niezbędny, aby nie było ostrzeżeń/błędów konsoli!
+
+Klucz powinien być unikalnym stringiem.
+Tutaj prosta receptura.
+Szukaj w tej kolejności:
+- ID;
+- Unikalna informacja - np. PESEL czy email w użytkowniku;
+- indeks (najsłabszy, robiony, tylko żeby React się odwalił ;));
