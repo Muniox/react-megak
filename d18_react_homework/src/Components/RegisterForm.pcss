@@ -1,0 +1,44 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    label {
+        align-self: flex-start;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    &__error-message {
+        position: absolute;
+        top: 1rem;
+        border-radius: 8px;
+        font-size: 1em;
+        font-weight: 500;
+        font-family: inherit;
+        border: 1px solid #646cff;
+        padding: 0.6em 1.2em;
+        background: #1a1a1a;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: red;
+    }
+
+    &__display {
+        //border: 2px solid white;
+
+        &--error {
+            outline-style: solid;
+            outline-color: red;
+            outline-width: 2px;
+        }
+
+        &--valid {
+            outline-style: solid;
+            outline-color: green;
+            outline-width: 2px;
+        }
+    }
+}
