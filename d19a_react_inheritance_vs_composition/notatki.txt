@@ -1,0 +1,12 @@
+inheritance(dziedziczenie)
+
+- nigdy nie używamy dziedziczenia
+
+composition(kompozycja)
+
+-używamy zawsze
+- przekazywanie w props JSX.Element, ale jest to mało wygodne, lepiej użyć props.children
+
+16.58
+
+https://pl.reactjs.org/docs/thinking-in-react.html -> zrobienie na wersje funkcyjną
