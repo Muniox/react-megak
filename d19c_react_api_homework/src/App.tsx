@@ -7,7 +7,9 @@ export const App = () => {
 
   return (
     <div className="App">
-     <BitcoinPrice/>
+     <BitcoinPrice>
+         Aktualna cena Bitcoina do USDT to:
+     </BitcoinPrice>
     </div>
   )
 }
