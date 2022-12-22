@@ -1,0 +1,1 @@
+Jak przesyłamy z back-endu na front-end najlepiej stosować podejście allow-list zamiast block-list!
