@@ -1,5 +1,5 @@
 import {FC} from "react"
-import { GiftEntity } from "../../types/gifts"
+import { GiftEntity } from "types"
 import { GiftTableRow } from "./GiftTableRow";
 
 interface Props {
@@ -15,6 +15,7 @@ export const GiftsTable: FC<Props> = (props) => {
                     <th>ID</th>
                     <th>Name</th>
                     <th>Count</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>

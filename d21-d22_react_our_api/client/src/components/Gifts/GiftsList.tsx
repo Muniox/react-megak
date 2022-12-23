@@ -1,5 +1,5 @@
 import {FC, useEffect, useState} from "react"
-import { GiftEntity } from "../../types/gifts";
+import { GiftEntity } from "types";
 import { GiftsTable } from "./GiftsTable";
 
 
