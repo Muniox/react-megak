@@ -1,12 +1,12 @@
 import './App.pcss'
-import { GiftsList } from './components/Gifts/GiftsList'
+import { GiftsView } from './views/GiftsView'
 
 export const App = () => {
 
 
   return (
     <div className="App">
-      <GiftsList/>
+      <GiftsView/>
     </div>
   )
 }

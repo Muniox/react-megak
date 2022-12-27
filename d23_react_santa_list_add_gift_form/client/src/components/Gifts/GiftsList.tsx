@@ -1,6 +1,7 @@
 import {FC, useEffect, useState} from "react"
 import { GiftEntity } from "types";
 import { GiftsTable } from "./GiftsTable";
+import { Spinner } from "../common/Spinner/Spinner";
 
 
 export const GiftsList: FC = () => {
@@ -18,7 +19,7 @@ export const GiftsList: FC = () => {
     },[]);
 
     if (giftsList === null) {
-        return <p>Wczytywanie...</p>
+        return <Spinner/>
     }
 
     return <>
