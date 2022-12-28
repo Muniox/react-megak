@@ -1,0 +1,29 @@
+.Spinner {
+    width: 48px;
+    height: 48px;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+
+    color-scheme: light dark;
+    border: 5px solid #ffffff;
+    border-bottom-color: transparent;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .Spinner {
+        border: 5px solid #080808;
+        border-bottom-color: transparent;
+    }
+}
